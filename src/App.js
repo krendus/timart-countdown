@@ -15,6 +15,7 @@ function App() {
     const updateTimer = () => {
       const start = Date.now()
       const distance = end - start;
+      if(distance <= 0) return
       let currentDays = Math.floor(distance/(1000*60*60*24))
       let currentHours = Math.floor((distance%(1000*60*60*24))/(1000*60*60))
       let currentMinutes = Math.floor((distance%(1000*60*60))/(1000*60))
