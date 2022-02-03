@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #fff;
+  position: relative;
+}
+.header {
+  height: 180px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.body {
+  height: calc(100% - 210px);
+  min-height: 400px;
 }
+.header img{
+  height: 80px;
+}
+.caption {
+  text-align: center;
+  width: 40%;
+  min-width: 300px;
+  margin: 20px auto;
+  font-size: 18px;
+  color: #9BA7BF;
+  font-family: "Roboto",sans-serif;
+}
+.coming-soon {
+  text-align: center;
+  color: #333;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+}
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.timer-card {
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  background: rgb(26, 34, 45);
+  color: #fff;
+  height: 75px;
+  width: 80px;
+  margin: 0 10px;
+  padding: 2px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px white inset;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.timer-card .value {
+  font-size: 28px;
+  font-weight: bold;
+}
+.timer-card .type {
+  font-size: 14px;
+}
+.footer {
+  height: 30px;
+  min-height: 30px;
+  font-size: 14px;
+  background: rgb(26, 34, 45);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+}
+@media screen and (max-width: 590px){
+  .timer-card {
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .timer-card .value {
+    font-size: 23px;
+  }
+  .timer-card .type {
+    font-size: 13px;
+  }
+  .coming-soon {
+    font-size: 30px;
   }
 }
