@@ -1,7 +1,7 @@
 import './App.css';
 import TimerCard from './component/TimerCard';
 import { useEffect, useState } from 'react';
-import logo from './assets/timart-logo.webp'
+import logo from './assets/timart-ecommerce.png'
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         <img src={logo} alt='' />
       </div>
       <div className='body'>
-        <p className='caption'>Shop at your convenience with Quick Shop, pay online and have your items delivered to your door-step.</p>
+        <p className='caption'>Shop at your convenience with Timart, pay online and have your items delivered to your door-step.</p>
         <h1 className='coming-soon'>Coming Soon!</h1>
         <div className='timer-container'>
           <TimerCard value={days < 10 ? '0' + days: days} type={days < 2 ? 'day' : 'days'}/> 
